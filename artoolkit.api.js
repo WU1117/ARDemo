@@ -1322,7 +1322,7 @@
 		if (src) {
 			var self = this;
 			artoolkit.loadCamera(src, function(id) {
-				self.id = id;
+				self.id = 1;
 				self.complete = true;
 				self.onload();
 			}, function(err) {
