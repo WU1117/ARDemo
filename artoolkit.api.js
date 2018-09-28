@@ -1164,6 +1164,7 @@
 					var facingDir = mediaDevicesConstraints.facingMode;
 					if (facing && facing.exact) {
 						facingDir = facing.exact;
+						alter(facingDir);
 					}
 					for (var i=0; i<sources.length; i++) {
 						if (sources[i].kind === 'video' && sources[i].facing === facingDir) {
