@@ -1149,14 +1149,15 @@
 			audio: false,
 			video: {
 				mandatory: constraints
-		  	}
+		  	},
+			facingMode:facing
 		};
 
 		if ( false ) {
 		// if ( navigator.mediaDevices || window.MediaStreamTrack) {
 			if (navigator.mediaDevices) {
 				navigator.mediaDevices.getUserMedia({
-					audio: false,
+					audio: true,
 					video: mediaDevicesConstraints
 				}).then(success, onError); 
 			} else {
